@@ -5,15 +5,23 @@
   
 
   
-  <title>WiiRong&#39;s Blog</title>
+  <title>R与数据分析 | WiiRong&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="WiiRong&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="第一章   Data visualisation简述In data visualisation you’ll dive into visualisation, learning the basic structure of a ggplot2 plot, and powerful techniques for turning data into plots.You get to make eleg">
+<meta property="og:type" content="article">
+<meta property="og:title" content="R与数据分析">
+<meta property="og:url" content="http://yoursite.com/2020/07/16/R%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/index.html">
 <meta property="og:site_name" content="WiiRong&#39;s Blog">
+<meta property="og:description" content="第一章   Data visualisation简述In data visualisation you’ll dive into visualisation, learning the basic structure of a ggplot2 plot, and powerful techniques for turning data into plots.You get to make eleg">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://d33wubrfki0l68.cloudfront.net/7b70e5c694d661644e49bcaa2fa8d923007cf718/b117d/visualize_files/figure-html/unnamed-chunk-12-1.png">
+<meta property="og:image" content="https://d33wubrfki0l68.cloudfront.net/94b029204c691b958eb0c60c6915a19ee4d319bf/ceeb1/visualize_files/figure-html/unnamed-chunk-13-1.png">
+<meta property="og:image" content="https://d33wubrfki0l68.cloudfront.net/3e4d5a44b35d0de122c81319995d5dcf484e6d71/7fb04/visualize_files/figure-html/unnamed-chunk-17-2.png">
+<meta property="article:published_time" content="2020-07-15T17:04:28.700Z">
+<meta property="article:modified_time" content="2020-07-11T06:11:40.500Z">
 <meta property="article:author" content="WiiRong">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://d33wubrfki0l68.cloudfront.net/7b70e5c694d661644e49bcaa2fa8d923007cf718/b117d/visualize_files/figure-html/unnamed-chunk-12-1.png">
   
     <link rel="alternate" href="/atom.xml" title="WiiRong&#39;s Blog" type="application/atom+xml">
   
@@ -66,99 +74,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-HelloBlog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/07/16/HelloBlog/" class="article-date">
-  <time datetime="2020-07-15T17:04:28.724Z" itemprop="datePublished">2020-07-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/16/HelloBlog/">HelloBlog</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>title: Github和Hexo配合配置个人博客过程实录</p>
-<h2 id="1、github网页："><a href="#1、github网页：" class="headerlink" title="1、github网页："></a>1、github网页：</h2><p>​        新建Repositories，其项目名应与github用户名相同，名称为<strong>wiirong.github.io</strong></p>
-<h2 id="2、安装-git-（清华镜像下载）"><a href="#2、安装-git-（清华镜像下载）" class="headerlink" title="2、安装 git （清华镜像下载）"></a>2、安装 git （清华镜像下载）</h2><h2 id="3、安装-node-js-（官网下载即可，下载LTS版）"><a href="#3、安装-node-js-（官网下载即可，下载LTS版）" class="headerlink" title="3、安装 node.js  （官网下载即可，下载LTS版）"></a>3、安装 node.js  （官网下载即可，下载LTS版）</h2><h2 id="4、使用cmd（WIN-R召出并运行“cmd”）"><a href="#4、使用cmd（WIN-R召出并运行“cmd”）" class="headerlink" title="4、使用cmd（WIN+R召出并运行“cmd”）"></a>4、使用cmd（WIN+R召出并运行“cmd”）</h2><p>​    【改变 cmd 的位置：先输入盘符和冒号， 再输入d盘内目标文件名（路径） 即可（不区分大小写）】</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d:</span><br><span class="line">blog</span><br></pre></td></tr></table></figure>
-
-<h2 id="5、验证git和nodejs的安装"><a href="#5、验证git和nodejs的安装" class="headerlink" title="5、验证git和nodejs的安装"></a>5、验证git和nodejs的安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br><span class="line">node --v</span><br><span class="line">npm --v</span><br></pre></td></tr></table></figure>
-
-<p>   【上述这些命令行结果都显示为各自的版本号就可以了】</p>
-<h2 id="6、安装-hexo"><a href="#6、安装-hexo" class="headerlink" title="6、安装 hexo"></a>6、安装 hexo</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>  （本文这些代码都是在 cmd 中的 D：/Blog位置下运行的）</p>
-<p>   然后用 <code>hexo -v</code> 检查版本，显示版本号就行</p>
-<h2 id="7、配置blog文件"><a href="#7、配置blog文件" class="headerlink" title="7、配置blog文件"></a>7、配置blog文件</h2><p>   在cmd中d：/blog 下输入：<code>hexo init</code></p>
-<p>   耐性等待下载即可</p>
-<h2 id="8、生成本地主页"><a href="#8、生成本地主页" class="headerlink" title="8、生成本地主页"></a>8、生成本地主页</h2><p>   继续输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-
-<p>   第一个是生成静态文件，第二个是启动服务器（localhost:4000/）</p>
-<p>   （可以本地查看博客，复制快捷键会关闭本地预览，不必关闭，再开一个cmd即可）</p>
-<h2 id="9、将本地文件上传到github仓库"><a href="#9、将本地文件上传到github仓库" class="headerlink" title="9、将本地文件上传到github仓库"></a>9、将本地文件上传到github仓库</h2><p>（1）配置SSH KEY</p>
-<p>​     在cmd中d：/blog输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;wiirong&quot;</span><br><span class="line">git config --global user.email &quot;903590780@qq.com&quot;</span><br></pre></td></tr></table></figure>
-
-<p>​     再创建ssh key：</p>
-<p>​     <code>ssh-keygen -t rsa -C &quot;903590780@qq.com&quot;</code></p>
-<p>​     会询问几个问题（放置文件位置、密码等），enter键跳过即可</p>
-<p> （2）前往上述放置文件位置，用文本打开.pub文件，全选复制其中代码。</p>
-<p>（3）打开github个人主页的setting，进入“SSH and GPG keys”选项，新建一个SSH KEY ，名字随便起为 blog，把刚才复制的公钥粘贴进去。</p>
-<p>（4）在命令行继续输入：</p>
-<p>​     <code>ssh -T git@github.com</code></p>
-<p>​     检查是否能连接</p>
-<h2 id="10、将hexo部署到github"><a href="#10、将hexo部署到github" class="headerlink" title="10、将hexo部署到github"></a>10、将hexo部署到github</h2><p>（1）打开blog文件夹中的 _config.yml 文件（文本打开）</p>
-<p>  找到最下面的deploy，修改并添加，结果如下（两个单引号代表略，替换成git即可）：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">type: git</span><br><span class="line">repo: https:&#x2F;&#x2F;github.com&#x2F;wiirong&#x2F;wiirong.github.io.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
-
-<p>​    这个文件里还可以修改网站相关信息（标题、副标题、语言、作者等等）</p>
-<p>（2）再cmd输入：</p>
-<p>​    <code>npm install hexo-deployer-git --save</code></p>
-<p> （3）再输入：</p>
-<p>​    <code>hexo clean</code></p>
-<p>​    <code>hexo generate</code></p>
-<p>​     <code>hexo deploy</code></p>
-<p>​     上述三个分别为了：清除缓存、更新文件、部署</p>
-<p>​     *部署deploy的时候会弹框要求输入github的账号和密码。</p>
-<h2 id="11、检查能否登录个人博客"><a href="#11、检查能否登录个人博客" class="headerlink" title="11、检查能否登录个人博客"></a>11、检查能否登录个人博客</h2><p>​      <a href="https://wiirong.github.io/" target="_blank" rel="noopener">https://wiirong.github.io/</a></p>
-<h2 id="12、发表文章："><a href="#12、发表文章：" class="headerlink" title="12、发表文章："></a>12、发表文章：</h2><p> （1） 在blog文件夹中的 source / _posts 里面创建“.md”文件（可以直接在blog文件夹中右键启动git Bash并输入 hexo new “文章名”   来完成这一步骤。）</p>
-<p> （2）利用CMD 且在d盘的blog目录下，输入老三样（后两行的第二个单词可以简写成一个字母g、d。另：clean不能缩写，但如非原地更新，则无需clean。）：</p>
-<p>​     hexo clean</p>
-<p>​     hexo generate</p>
-<p>​     hexo deploy</p>
-<p>   clean清除缓存这一步如非必须则可以省略不写。</p>
-<p>（3）用批处理.bat简化发表步骤</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line"></span><br><span class="line">start cmd &#x2F;k &quot;D: cd blog &amp;&amp; hexo clean &amp;&amp; hexo g &amp;&amp; hexo d&quot;</span><br><span class="line"></span><br><span class="line"> pause</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/16/HelloBlog/" data-id="ckcnm7u8q0000tstrf19e7f3h" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-R与数据分析" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-R与数据分析" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/07/16/R%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" class="article-date">
   <time datetime="2020-07-15T17:04:28.700Z" itemprop="datePublished">2020-07-16</time>
@@ -171,8 +87,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/16/R%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">R与数据分析</a>
+    <h1 class="article-title" itemprop="name">
+      R与数据分析
     </h1>
   
 
@@ -323,11 +239,23 @@
     </footer>
   </div>
   
-</article>
-
+    
+<nav id="article-nav">
+  
+    <a href="/2020/07/16/HelloBlog/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          HelloBlog
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
-
+</article>
 
 </section>
         
