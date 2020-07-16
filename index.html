@@ -161,6 +161,10 @@
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
   </nav>
 </div>
 
@@ -208,7 +212,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/07/16/HelloBlog/" class="post-title-link" itemprop="url">HelloBlog</a>
+            <a href="/2020/07/16/HelloBlog/" class="post-title-link" itemprop="url">[object Object]</a>
         </h2>
 
         <div class="post-meta">
@@ -219,7 +223,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-07-16 01:04:28 / 修改时间：10:50:26" itemprop="dateCreated datePublished" datetime="2020-07-16T01:04:28+08:00">2020-07-16</time>
+              <time title="创建时间：2020-07-16 01:04:28 / 修改时间：10:56:06" itemprop="dateCreated datePublished" datetime="2020-07-16T01:04:28+08:00">2020-07-16</time>
             </span>
 
           
@@ -233,64 +237,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>title:  <br>description: 记录生成此博客的全过程（GitHub+Hexo）<br>tags: </p>
-<ul>
-<li>Hexo博客</li>
-</ul>
-<h2 id="1、github网页："><a href="#1、github网页：" class="headerlink" title="1、github网页："></a>1、github网页：</h2><p>​        新建Repositories，其项目名应与github用户名相同，名称为<strong>wiirong.github.io</strong></p>
-<h2 id="2、安装-git-（清华镜像下载）"><a href="#2、安装-git-（清华镜像下载）" class="headerlink" title="2、安装 git （清华镜像下载）"></a>2、安装 git （清华镜像下载）</h2><h2 id="3、安装-node-js-（官网下载即可，下载LTS版）"><a href="#3、安装-node-js-（官网下载即可，下载LTS版）" class="headerlink" title="3、安装 node.js  （官网下载即可，下载LTS版）"></a>3、安装 node.js  （官网下载即可，下载LTS版）</h2><h2 id="4、使用cmd（WIN-R召出并运行“cmd”）"><a href="#4、使用cmd（WIN-R召出并运行“cmd”）" class="headerlink" title="4、使用cmd（WIN+R召出并运行“cmd”）"></a>4、使用cmd（WIN+R召出并运行“cmd”）</h2><p>​    【改变 cmd 的位置：先输入盘符和冒号， 再输入d盘内目标文件名（路径） 即可（不区分大小写）】</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d:</span><br><span class="line">blog</span><br></pre></td></tr></table></figure>
-
-<h2 id="5、验证git和nodejs的安装"><a href="#5、验证git和nodejs的安装" class="headerlink" title="5、验证git和nodejs的安装"></a>5、验证git和nodejs的安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br><span class="line">node --v</span><br><span class="line">npm --v</span><br></pre></td></tr></table></figure>
-
-<p>   【上述这些命令行结果都显示为各自的版本号就可以了】</p>
-<h2 id="6、安装-hexo"><a href="#6、安装-hexo" class="headerlink" title="6、安装 hexo"></a>6、安装 hexo</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>  （本文这些代码都是在 cmd 中的 D：/Blog位置下运行的）</p>
-<p>   然后用 <code>hexo -v</code> 检查版本，显示版本号就行</p>
-<h2 id="7、配置blog文件"><a href="#7、配置blog文件" class="headerlink" title="7、配置blog文件"></a>7、配置blog文件</h2><p>   在cmd中d：/blog 下输入：<code>hexo init</code></p>
-<p>   耐性等待下载即可</p>
-<h2 id="8、生成本地主页"><a href="#8、生成本地主页" class="headerlink" title="8、生成本地主页"></a>8、生成本地主页</h2><p>   继续输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-
-<p>   第一个是生成静态文件，第二个是启动服务器（localhost:4000/）</p>
-<p>   （可以本地查看博客，复制快捷键会关闭本地预览，不必关闭，再开一个cmd即可）</p>
-<h2 id="9、将本地文件上传到github仓库"><a href="#9、将本地文件上传到github仓库" class="headerlink" title="9、将本地文件上传到github仓库"></a>9、将本地文件上传到github仓库</h2><p>（1）配置SSH KEY</p>
-<p>​     在cmd中d：/blog输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;wiirong&quot;</span><br><span class="line">git config --global user.email &quot;903590780@qq.com&quot;</span><br></pre></td></tr></table></figure>
-
-<p>​     再创建ssh key：</p>
-<p>​     <code>ssh-keygen -t rsa -C &quot;903590780@qq.com&quot;</code></p>
-<p>​     会询问几个问题（放置文件位置、密码等），enter键跳过即可</p>
-<p> （2）前往上述放置文件位置，用文本打开.pub文件，全选复制其中代码。</p>
-<p>（3）打开github个人主页的setting，进入“SSH and GPG keys”选项，新建一个SSH KEY ，名字随便起为 blog，把刚才复制的公钥粘贴进去。</p>
-<p>（4）在命令行继续输入：</p>
-<p>​     <code>ssh -T git@github.com</code></p>
-<p>​     检查是否能连接</p>
-<h2 id="10、将hexo部署到github"><a href="#10、将hexo部署到github" class="headerlink" title="10、将hexo部署到github"></a>10、将hexo部署到github</h2><p>（1）打开blog文件夹中的 _config.yml 文件（文本打开）</p>
-<p>  找到最下面的deploy，修改并添加，结果如下（两个单引号代表略，替换成git即可）：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">type: git</span><br><span class="line">repo: https:&#x2F;&#x2F;github.com&#x2F;wiirong&#x2F;wiirong.github.io.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
-
-<p>​    这个文件里还可以修改网站相关信息（标题、副标题、语言、作者等等）</p>
-<p>（2）再cmd输入：</p>
-<p>​    <code>npm install hexo-deployer-git --save</code></p>
-<p> （3）再输入：</p>
-<p>​    <code>hexo clean</code></p>
-<p>​    <code>hexo generate</code></p>
-<p>​     <code>hexo deploy</code></p>
-<p>​     上述三个分别为了：清除缓存、更新文件、部署</p>
-<p>​     *部署deploy的时候会弹框要求输入github的账号和密码。</p>
-<h2 id="11、检查能否登录个人博客"><a href="#11、检查能否登录个人博客" class="headerlink" title="11、检查能否登录个人博客"></a>11、检查能否登录个人博客</h2><p>​      <a href="https://wiirong.github.io/" target="_blank" rel="noopener">https://wiirong.github.io/</a></p>
-<h2 id="12、发表文章："><a href="#12、发表文章：" class="headerlink" title="12、发表文章："></a>12、发表文章：</h2><p> （1） 在blog文件夹中的 source / _posts 里面创建“.md”文件（可以直接在blog文件夹中右键启动git Bash并输入 hexo new “文章名”   来完成这一步骤。）</p>
-<p> （2）利用CMD 且在d盘的blog目录下，输入老三样（后两行的第二个单词可以简写成一个字母g、d。另：clean不能缩写，但如非原地更新，则无需clean。）：</p>
-<p>​     hexo clean</p>
-<p>​     hexo generate</p>
-<p>​     hexo deploy</p>
-<p>   clean清除缓存这一步如非必须则可以省略不写。</p>
-<p>（3）用批处理.bat简化发表步骤</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line"></span><br><span class="line">start cmd &#x2F;k &quot;D: cd blog &amp;&amp; hexo clean &amp;&amp; hexo g &amp;&amp; hexo d&quot;</span><br><span class="line"></span><br><span class="line"> pause</span><br></pre></td></tr></table></figure>
-
-
+          <p>记录生成此博客的全过程（GitHub+Hexo）</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/07/16/HelloBlog/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -334,7 +289,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-07-16 01:04:28 / 修改时间：10:51:22" itemprop="dateCreated datePublished" datetime="2020-07-16T01:04:28+08:00">2020-07-16</time>
+              <time title="创建时间：2020-07-16 01:04:28 / 修改时间：10:57:24" itemprop="dateCreated datePublished" datetime="2020-07-16T01:04:28+08:00">2020-07-16</time>
             </span>
 
           
@@ -348,141 +303,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>description: 《R4DS》一书的笔记</p>
-<h1 id="第一章-Data-visualisation"><a href="#第一章-Data-visualisation" class="headerlink" title="第一章   Data visualisation"></a>第一章   Data visualisation</h1><h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>In <a href="https://r4ds.had.co.nz/data-visualisation.html#data-visualisation" target="_blank" rel="noopener">data visualisation</a> you’ll dive into visualisation, learning the basic structure of a <strong>ggplot2</strong> plot, and powerful techniques for <u>turning data into plots</u>.You get to make elegant and informative plots that help you understand data.</p>
-<p>This chapter focusses on <strong>ggplot2</strong>, one of the core members of the <strong>==tidyverse==</strong>. To access the <u>datasets</u>, <u>help pages</u>, and <u>functions</u> that we will use in this chapter, <strong>load the tidyverse</strong> by running this code:</p>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(tidyverse)</span><br></pre></td></tr></table></figure>
-
-<p>tidyverse包含了数据分析最常用的包，调用后得到的結果如下：</p>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(tidyverse)</span><br><span class="line"><span class="comment">#&gt; ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──</span></span><br><span class="line"><span class="comment">#&gt; ✔ ggplot2 3.3.0     ✔ purrr   0.3.4</span></span><br><span class="line"><span class="comment">#&gt; ✔ tibble  3.0.1     ✔ dplyr   0.8.5</span></span><br><span class="line"><span class="comment">#&gt; ✔ tidyr   1.0.3     ✔ stringr 1.4.0</span></span><br><span class="line"><span class="comment">#&gt; ✔ readr   1.3.1     ✔ forcats 0.5.0</span></span><br><span class="line"><span class="comment">#&gt; ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──</span></span><br><span class="line"><span class="comment">#&gt; ✖ dplyr::filter() masks stats::filter()</span></span><br><span class="line"><span class="comment">#&gt; ✖ dplyr::lag()    masks stats::lag()</span></span><br></pre></td></tr></table></figure>
-
-<p>其中，对勾项意为启用了这些<em>R包</em>，而冲突项（X）意为<strong>tidyverse</strong>与R的几个基础函数冲突。dplyr::filter()里的双冒号左边代表R包名，右边代表具体函数。</p>
-<blockquote>
-<p>You only need to install a package once, but you need to <strong>reload</strong> it every time you start a new session.      ——每个任务都要重新调用所需R包</p>
-</blockquote>
-<h2 id="一、初会散点图"><a href="#一、初会散点图" class="headerlink" title="一、初会散点图"></a>一、初会散点图</h2><h3 id="1、使用mpg这一data-frame"><a href="#1、使用mpg这一data-frame" class="headerlink" title="1、使用mpg这一data frame"></a>1、使用mpg这一data frame</h3><p>使用ggplot2自带的数据： <code>mpg</code> <strong>data frame</strong> found in ggplot2 (aka <code>ggplot2::mpg</code>). </p>
-<blockquote>
-<p>A ==<strong>data frame</strong>== is a rectangular collection of variables (in the columns) and observations (in the rows).<br>（<code>mpg</code> contains observations collected by the US Environmental Protection Agency on 38 models of car.）</p>
-</blockquote>
-<p>通过 <em>mpg</em> 查看此数据框的详情，通过  <em>?mpg</em>  查看其帮助文档。</p>
-<h3 id="2、创建一个ggplot"><a href="#2、创建一个ggplot" class="headerlink" title="2、创建一个ggplot"></a>2、创建一个ggplot</h3><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ggplot(data = mpg) +</span><br><span class="line">  geom_point(mapping = aes(x = displ, y = hwy))</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>函数/参数</th>
-<th>意义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>ggplot</strong>（）</td>
-<td>创建一个空坐标系（通过下句函数添加图层）</td>
-</tr>
-<tr>
-<td><strong>data=</strong> mpg</td>
-<td>ggplot的第一个参数，确定图中使用的数据（dataset）</td>
-</tr>
-<tr>
-<td>geom_point（）</td>
-<td>向plot添加一个<strong>散点图</strong>图层</td>
-</tr>
-<tr>
-<td>mapping</td>
-<td>geom函数必备参数，决定了dataset中的数据如何<u>映射（map）</u>成为视觉表现</td>
-</tr>
-<tr>
-<td>mapping=aes()</td>
-<td>aesthetic（审美）参数，内含有横纵坐标x、y</td>
-</tr>
-</tbody></table>
-<p>函数中的重点如下：<br>ggplot(==data === mpg) ==+==<br>  geom_point(==mapping = aes==(x = displ, y = hwy))</p>
-<p>{注}ggplot（）函数和geom_point（）函数之间用 <strong>+</strong> 连接，可以不换行直接运行，若换行（缩进格式谋求规范书写）的话，加号必须在上句的最后（若在下句的开始则会出错）。</p>
-<h3 id="3、制图代码模板A-graphing-template"><a href="#3、制图代码模板A-graphing-template" class="headerlink" title="3、制图代码模板A graphing template"></a>3、制图代码模板A graphing template</h3><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ggplot(data = &lt;DATA&gt;) + </span><br><span class="line">  &lt;GEOM_FUNCTION&gt;(mapping = aes(&lt;MAPPINGS&gt;))</span><br></pre></td></tr></table></figure>
-
-<p>用数据、geom函数、映射参数替换上述中含有&lt;&gt;的部分。本章接下来部分 will show you how to complete and extend this <strong>template</strong> to make different types of graphs. We will begin with the <code>&lt;MAPPINGS&gt;</code> component.</p>
-<blockquote>
-<p>注：参数的英文是argument</p>
-<p>map有映射的含义，mapping在此意为映射参数</p>
-</blockquote>
-<h2 id="二、审美映射参数（Aesthetic-mappings）"><a href="#二、审美映射参数（Aesthetic-mappings）" class="headerlink" title="二、审美映射参数（Aesthetic mappings）"></a>二、审美映射参数（Aesthetic mappings）</h2><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 按照样本的class变量进行区分，绘制成不同透明度的点</span></span><br><span class="line">ggplot(data = mpg) + </span><br><span class="line">  geom_point(mapping = aes(x = displ, y = hwy, alpha = class))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 按照样本的class变量进行区分，绘制成不同的形状的点</span></span><br><span class="line">ggplot(data = mpg) + </span><br><span class="line">  geom_point(mapping = aes(x = displ, y = hwy, shape = class))</span><br></pre></td></tr></table></figure>
-
-<p>ggplot2将会<strong>自动添加图例（legend）</strong>在plot旁边。还可以自动为所选变量class的每个惟一值分配惟一的审美级别（这一过程叫做<strong>scaling</strong>）。</p>
-<table>
-<thead>
-<tr>
-<th>aes（）内的审美参数</th>
-<th>用法：aes（x= ，Y= ，color= 某类型变量）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>color</td>
-<td>自动上色</td>
-</tr>
-<tr>
-<td>size</td>
-<td>赋予数据点不同的直径</td>
-</tr>
-<tr>
-<td>alpha</td>
-<td>透明度</td>
-</tr>
-<tr>
-<td>shape</td>
-<td>赋予最多 6 种不同的形状（超出部分不予绘制）</td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>调用  ?geo_point  帮助文档可以找到这些审美参数（其中的Aesthetics部分）。可以看到全部aesthetics映射参数的预览效果和使用方法。</p>
-</blockquote>
-<p>如果将上述审美参数写在  mapping=aes（）之外，而在geo_point（）函数之内，则图中全部点全部设置为同一种 颜色，此时color后面不跟variable名而是加引号的颜色的名字：</p>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ggplot(data = mpg) + </span><br><span class="line">  geom_point(mapping = aes(x = displ, y = hwy), color = <span class="string">"blue"</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="三、分面作图（Facets）"><a href="#三、分面作图（Facets）" class="headerlink" title="三、分面作图（Facets）"></a>三、分面作图（Facets）</h2><p>上面讲的审美参数能够引入第三个（甚至更多）变量进入plot中，而现在所讲的分面作图（Facets）也可以起到这一效果。</p>
-<h3 id="（1）用单个变量进行分面（facet）"><a href="#（1）用单个变量进行分面（facet）" class="headerlink" title="（1）用单个变量进行分面（facet）"></a>（1）用单个变量进行分面（facet）</h3><p>在绘制完ggplot和geom散点图之后，运用函数 facet_wrap（）可以进行单变量分隔面作图：</p>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ggplot(data = mpg) + </span><br><span class="line">  geom_point(mapping = aes(x = displ, y = hwy)) + </span><br><span class="line">  facet_wrap(~ class, nrow = <span class="number">2</span>)</span><br><span class="line"><span class="comment">#下图共有三个变量参与制图</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://d33wubrfki0l68.cloudfront.net/7b70e5c694d661644e49bcaa2fa8d923007cf718/b117d/visualize_files/figure-html/unnamed-chunk-12-1.png" alt="img"></p>
-<p>图中每个小面都将其对应的变量名写在小面图的上方。</p>
-<p>facet_wrap（）函数中有两个参数：第一个参数是 <strong>formula</strong>（表达式——R语言中的一种数据结构），用波浪符号  ~  隔开两个参数，在wrap（）中无响应变量所以左边空置。</p>
-<p>第二个参数是对分面小图的展示行数进行设置，用  nrow=   进行设置，竟在facet_wrap（）中使用。（下一节的facet_grid（）无此参数）</p>
-<blockquote>
-<p>facet_wrap(~class, scales = “free”)         ##分面可以用不同的坐标系，默认为scales=”fixed”.<br> facet_wrap(c(“cyl”, “drv”), labeller = “label_both”)         ## 同过c()函数，facet_wrap()也可实现两个变量的分面，通过labeller参数控制 标签显示更加完全。</p>
-</blockquote>
-<h3 id="（2）利用两个变量进行分面"><a href="#（2）利用两个变量进行分面" class="headerlink" title="（2）利用两个变量进行分面"></a>（2）利用两个变量进行分面</h3><p>用函数  facet_grid（）进行，其中的formula参数用 ~连接两个变量variables。</p>
-<p>但是可以用符号  .   来代替其中一个变量，使得结果不在该变量所对应的行（列）上进行分割面。</p>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ggplot(data = mpg) + </span><br><span class="line">  geom_point(mapping = aes(x = displ, y = hwy)) + </span><br><span class="line">  facet_grid(drv ~ cyl)</span><br><span class="line"><span class="comment">#结果图中的三行代表三种drv类型，而四列代表cyl的四个类型值。</span></span><br><span class="line"><span class="comment">#下图共有 4 个变量参与制图</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://d33wubrfki0l68.cloudfront.net/94b029204c691b958eb0c60c6915a19ee4d319bf/ceeb1/visualize_files/figure-html/unnamed-chunk-13-1.png" alt="img"></p>
-<h2 id="四、几何对象（Geometric-objects）"><a href="#四、几何对象（Geometric-objects）" class="headerlink" title="四、几何对象（Geometric objects）"></a>四、几何对象（Geometric objects）</h2><p>​    本节讲述不同的  geom   函数。</p>
-<table>
-<thead>
-<tr>
-<th>图形</th>
-<th>geom函数</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>bar charts（条形图）</td>
-<td>bar geoms</td>
-</tr>
-<tr>
-<td>line charts（折线图）</td>
-<td>line geoms</td>
-</tr>
-<tr>
-<td>boxplots（箱线图）</td>
-<td>boxplot geoms</td>
-</tr>
-<tr>
-<td>scatterplots（散点图）</td>
-<td>point geom</td>
-</tr>
-</tbody></table>
-<p>使用  ==<strong>geom_smooth（）</strong>==函数如下，输出图片如下：</p>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ggplot(data = mpg) +    </span><br><span class="line">  geom_smooth(mapping = aes(x = displ, y = hwy))</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://d33wubrfki0l68.cloudfront.net/3e4d5a44b35d0de122c81319995d5dcf484e6d71/7fb04/visualize_files/figure-html/unnamed-chunk-17-2.png" alt="img"></p>
-
+          <p>《R4DS》一书的笔记</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/07/16/R%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 

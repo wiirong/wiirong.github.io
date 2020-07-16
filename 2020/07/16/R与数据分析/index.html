@@ -22,19 +22,21 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"8.0.0-rc.4","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}}};
   </script>
 
-  <meta name="description" content="description: 《R4DS》一书的笔记 第一章   Data visualisation简述In data visualisation you’ll dive into visualisation, learning the basic structure of a ggplot2 plot, and powerful techniques for turning data into p">
+  <meta name="description" content="《R4DS》一书的笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="R与数据分析">
 <meta property="og:url" content="http://yoursite.com/2020/07/16/R%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/index.html">
 <meta property="og:site_name" content="WiiRong&#39;s Blog">
-<meta property="og:description" content="description: 《R4DS》一书的笔记 第一章   Data visualisation简述In data visualisation you’ll dive into visualisation, learning the basic structure of a ggplot2 plot, and powerful techniques for turning data into p">
+<meta property="og:description" content="《R4DS》一书的笔记">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://d33wubrfki0l68.cloudfront.net/7b70e5c694d661644e49bcaa2fa8d923007cf718/b117d/visualize_files/figure-html/unnamed-chunk-12-1.png">
 <meta property="og:image" content="https://d33wubrfki0l68.cloudfront.net/94b029204c691b958eb0c60c6915a19ee4d319bf/ceeb1/visualize_files/figure-html/unnamed-chunk-13-1.png">
 <meta property="og:image" content="https://d33wubrfki0l68.cloudfront.net/3e4d5a44b35d0de122c81319995d5dcf484e6d71/7fb04/visualize_files/figure-html/unnamed-chunk-17-2.png">
 <meta property="article:published_time" content="2020-07-15T17:04:28.700Z">
-<meta property="article:modified_time" content="2020-07-16T02:51:22.136Z">
+<meta property="article:modified_time" content="2020-07-16T02:57:24.777Z">
 <meta property="article:author" content="WiiRong">
+<meta property="article:tag" content="R语言">
+<meta property="article:tag" content="数据处理">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://d33wubrfki0l68.cloudfront.net/7b70e5c694d661644e49bcaa2fa8d923007cf718/b117d/visualize_files/figure-html/unnamed-chunk-12-1.png">
 
@@ -170,6 +172,10 @@
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
   </nav>
 </div>
 
@@ -228,10 +234,11 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-07-16 01:04:28 / 修改时间：10:51:22" itemprop="dateCreated datePublished" datetime="2020-07-16T01:04:28+08:00">2020-07-16</time>
+              <time title="创建时间：2020-07-16 01:04:28 / 修改时间：10:57:24" itemprop="dateCreated datePublished" datetime="2020-07-16T01:04:28+08:00">2020-07-16</time>
             </span>
 
           
+            <div class="post-description">《R4DS》一书的笔记</div>
 
         </div>
       </header>
@@ -242,8 +249,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>description: 《R4DS》一书的笔记</p>
-<h1 id="第一章-Data-visualisation"><a href="#第一章-Data-visualisation" class="headerlink" title="第一章   Data visualisation"></a>第一章   Data visualisation</h1><h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>In <a href="https://r4ds.had.co.nz/data-visualisation.html#data-visualisation" target="_blank" rel="noopener">data visualisation</a> you’ll dive into visualisation, learning the basic structure of a <strong>ggplot2</strong> plot, and powerful techniques for <u>turning data into plots</u>.You get to make elegant and informative plots that help you understand data.</p>
+        <h1 id="第一章-Data-visualisation"><a href="#第一章-Data-visualisation" class="headerlink" title="第一章   Data visualisation"></a>第一章   Data visualisation</h1><h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>In <a href="https://r4ds.had.co.nz/data-visualisation.html#data-visualisation" target="_blank" rel="noopener">data visualisation</a> you’ll dive into visualisation, learning the basic structure of a <strong>ggplot2</strong> plot, and powerful techniques for <u>turning data into plots</u>.You get to make elegant and informative plots that help you understand data.</p>
 <p>This chapter focusses on <strong>ggplot2</strong>, one of the core members of the <strong>==tidyverse==</strong>. To access the <u>datasets</u>, <u>help pages</u>, and <u>functions</u> that we will use in this chapter, <strong>load the tidyverse</strong> by running this code:</p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(tidyverse)</span><br></pre></td></tr></table></figure>
 
@@ -384,6 +390,10 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/R%E8%AF%AD%E8%A8%80/" rel="tag"># R语言</a>
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/" rel="tag"># 数据处理</a>
+          </div>
 
         
 
@@ -392,8 +402,8 @@
     <div class="post-nav">
       <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2020/07/16/HelloBlog/" rel="next" title="HelloBlog">
-      HelloBlog <i class="fa fa-chevron-right"></i>
+    <a href="/2020/07/16/HelloBlog/" rel="next" title="[object Object]">
+      [object Object] <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
