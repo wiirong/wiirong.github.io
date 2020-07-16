@@ -1,355 +1,964 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
 
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+        WiiRong&#39;s Blog
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
   
-  <title>WiiRong&#39;s Blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="WiiRong&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="WiiRong&#39;s Blog">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="WiiRong">
-<meta name="twitter:card" content="summary">
-  
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body {
+        background-color: ;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text {
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="WiiRong&#39;s Blog">
+    <meta name="msapplication-starturl" content="http://yoursite.com/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="WiiRong&#39;s Blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yoursite.com/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="WiiRong&#39;s Blog">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    
+
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://yoursite.com" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "WiiRong&#39;s Blog",
+        "logo": "/img/favicon.png"
+    },
+    "url": "http://yoursite.com",
+    "image": {
+        "@type": "ImageObject",
+        "url": "/img/favicon.png"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://yoursite.com"
+    },
+    "description": ""
+}
+</script>
+
+
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
 
 <meta name="generator" content="Hexo 4.2.1"></head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">WiiRong&#39;s Blog</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">功崇惟志 | 业广惟勤</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Index Module -->
+<div class="material-index mdl-grid">
+    
+        <!-- Paradox Header -->
+        <!-- Daily pic -->
+<div class="mdl-card mdl-shadow--2dp daily-pic mdl-cell mdl-cell--8-col index-top-block">
+
+    <!-- Pic & Slogan -->
+    <div class="mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/daily_pic.png)">
+        <p class="index-top-block-slogan"><a href="#">
         
-      </nav>
-      <nav id="sub-nav">
+            
+                苟日新，日日新，又日新
+            
         
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
+        </a></p>
     </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-HelloBlog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/07/16/HelloBlog/" class="article-date">
-  <time datetime="2020-07-15T17:04:28.724Z" itemprop="datePublished">2020-07-16</time>
-</a>
+
+    <!-- Avatar & Name -->
+    <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+        <!-- Author Avatar -->
+        <div id="author-avatar">
+            <img src="/img/avatar.png" width="32px" height="32px" alt="avatar">
+        </div>
+        <div>
+            <strong>WiiRong</strong>
+        </div>
+    </div>
+</div>
+
+        <!-- Blog info -->
+<div class="mdl-card mdl-shadow--2dp something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop index-top-block">
+
+    <!-- Search -->
     
-  </div>
-  <div class="article-inner">
+    <!-- Google -->
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable" method="post" action="">
+        <label id="search-label" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent mdl-shadow--4dp" for="search">
+            <i class="material-icons mdl-color-text--white" role="presentation">search</i>
+        </label>
+
+        <form autocomplete="off" id="search-form" method="get" action="//google.com/search" accept-charset="UTF-8" class="mdl-textfield__expandable-holder" target="_blank">
+            <input class="mdl-textfield__input search-input" type="search" name="q" id="search" placeholder="">
+            <label id="search-form-label" class="mdl-textfield__label" for="search"></label>
+
+            <input type="hidden" name="sitesearch" value="http://yoursite.com">
+        </form>
+    </div>
+
+
+
+
+
+
+
+    <!-- LOGO -->
+    <div class="something-else-logo mdl-color--white mdl-color-text--grey-600">
+        <a href="#" target="_blank">
+            <img src="/img/logo.png" alt="logo" />
+        </a>
+    </div>
+
+    <!-- Infomation -->
+    <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
+        <!-- Blog Title -->
+        <div>
+            <strong>WiiRong&#39;s Blog</strong>
+        </div>
+        <div class="section-spacer"></div>
+
+        <!-- Pages -->
+        <button id="show-pages-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">view_carousel</i>
+            <span class="visuallyhidden">Pages</span>
+        </button>
+        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="show-pages-button">
+            
+                <a class="index_share-link" href="/tags" title="标签云">
+                    <li class="mdl-menu__item mdl-js-ripple-effect">
+                        标签云
+                    </li>
+                </a>
+            
+        </ul>
+
+        <!-- Menu -->
+        <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">more_vert</i>
+            <span class="visuallyhidden">show menu</span>
+        </button>
+        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="menubtn">
+            
+
+            
+
+            
+                <a class="index_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=WiiRong&#39;s Blog&url=http://yoursite.com&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+                    <li class="mdl-menu__item mdl-js-ripple-effect">
+                        分享到微博
+                    </li>
+                </a>
+            
+
+            
+                <a class="index_share-link" href="https://twitter.com/intent/tweet?text=WiiRong&#39;s Blog&url=http://yoursite.com&via=WiiRong" target="_blank">
+                    <li class="mdl-menu__item mdl-js-ripple-effect">
+                        分享到 Twitter
+                    </li>
+                </a>
+            
+
+            
+
+            
+                <a class="index_share-link" href="https://plus.google.com/share?url=http://yoursite.com" target="_blank">
+                    <li class="mdl-menu__item mdl-js-ripple-effect">
+                        分享到 Google+
+                    </li>
+                </a>
+            
+
+            
+
+            
+
+            
+        </ul>
+    </div>
+</div>
+
     
+    <div class="locate-thumbnail-symbol"></div>
+
+    <!-- Pin on top -->
     
-      <header class="article-header">
+
+    <!-- Normal Post -->
+    
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/16/HelloBlog/">配置个人博客过程实录</a>
-    </h1>
-  
-
-      </header>
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1、github网页："><a href="#1、github网页：" class="headerlink" title="1、github网页："></a>1、github网页：</h2><p>​        新建Repositories，其项目名应与github用户名相同，名称为<strong>wiirong.github.io</strong></p>
-<h2 id="2、安装-git-（清华镜像下载）"><a href="#2、安装-git-（清华镜像下载）" class="headerlink" title="2、安装 git （清华镜像下载）"></a>2、安装 git （清华镜像下载）</h2><h2 id="3、安装-node-js-（官网下载即可，下载LTS版）"><a href="#3、安装-node-js-（官网下载即可，下载LTS版）" class="headerlink" title="3、安装 node.js  （官网下载即可，下载LTS版）"></a>3、安装 node.js  （官网下载即可，下载LTS版）</h2><h2 id="4、使用cmd（WIN-R召出并运行“cmd”）"><a href="#4、使用cmd（WIN-R召出并运行“cmd”）" class="headerlink" title="4、使用cmd（WIN+R召出并运行“cmd”）"></a>4、使用cmd（WIN+R召出并运行“cmd”）</h2><p>​    【改变 cmd 的位置：先输入盘符和冒号， 再输入d盘内目标文件名（路径） 即可（不区分大小写）】</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d:</span><br><span class="line">blog</span><br></pre></td></tr></table></figure>
-
-<h2 id="5、验证git和nodejs的安装"><a href="#5、验证git和nodejs的安装" class="headerlink" title="5、验证git和nodejs的安装"></a>5、验证git和nodejs的安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br><span class="line">node --v</span><br><span class="line">npm --v</span><br></pre></td></tr></table></figure>
-
-<p>   【上述这些命令行结果都显示为各自的版本号就可以了】</p>
-<h2 id="6、安装-hexo"><a href="#6、安装-hexo" class="headerlink" title="6、安装 hexo"></a>6、安装 hexo</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>  （本文这些代码都是在 cmd 中的 D：/Blog位置下运行的）</p>
-<p>   然后用 <code>hexo -v</code> 检查版本，显示版本号就行</p>
-<h2 id="7、配置blog文件"><a href="#7、配置blog文件" class="headerlink" title="7、配置blog文件"></a>7、配置blog文件</h2><p>   在cmd中d：/blog 下输入：<code>hexo init</code></p>
-<p>   耐性等待下载即可</p>
-<h2 id="8、生成本地主页"><a href="#8、生成本地主页" class="headerlink" title="8、生成本地主页"></a>8、生成本地主页</h2><p>   继续输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-
-<p>   第一个是生成静态文件，第二个是启动服务器（localhost:4000/）</p>
-<p>   （可以本地查看博客，复制快捷键会关闭本地预览，不必关闭，再开一个cmd即可）</p>
-<h2 id="9、将本地文件上传到github仓库"><a href="#9、将本地文件上传到github仓库" class="headerlink" title="9、将本地文件上传到github仓库"></a>9、将本地文件上传到github仓库</h2><p>（1）配置SSH KEY</p>
-<p>​     在cmd中d：/blog输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;wiirong&quot;</span><br><span class="line">git config --global user.email &quot;903590780@qq.com&quot;</span><br></pre></td></tr></table></figure>
-
-<p>​     再创建ssh key：</p>
-<p>​     <code>ssh-keygen -t rsa -C &quot;903590780@qq.com&quot;</code></p>
-<p>​     会询问几个问题（放置文件位置、密码等），enter键跳过即可</p>
-<p> （2）前往上述放置文件位置，用文本打开.pub文件，全选复制其中代码。</p>
-<p>（3）打开github个人主页的setting，进入“SSH and GPG keys”选项，新建一个SSH KEY ，名字随便起为 blog，把刚才复制的公钥粘贴进去。</p>
-<p>（4）在命令行继续输入：</p>
-<p>​     <code>ssh -T git@github.com</code></p>
-<p>​     检查是否能连接</p>
-<h2 id="10、将hexo部署到github"><a href="#10、将hexo部署到github" class="headerlink" title="10、将hexo部署到github"></a>10、将hexo部署到github</h2><p>（1）打开blog文件夹中的 _config.yml 文件（文本打开）</p>
-<p>  找到最下面的deploy，修改并添加，结果如下（两个单引号代表略，替换成git即可）：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">type: git</span><br><span class="line">repo: https:&#x2F;&#x2F;github.com&#x2F;wiirong&#x2F;wiirong.github.io.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
-
-<p>​    这个文件里还可以修改网站相关信息（标题、副标题、语言、作者等等）</p>
-<p>（2）再cmd输入：</p>
-<p>​    <code>npm install hexo-deployer-git --save</code></p>
-<p> （3）再输入：</p>
-<p>​    <code>hexo clean</code></p>
-<p>​    <code>hexo generate</code></p>
-<p>​     <code>hexo deploy</code></p>
-<p>​     上述三个分别为了：清除缓存、更新文件、部署</p>
-<p>​     *部署deploy的时候会弹框要求输入github的账号和密码。</p>
-<h2 id="11、检查能否登录个人博客"><a href="#11、检查能否登录个人博客" class="headerlink" title="11、检查能否登录个人博客"></a>11、检查能否登录个人博客</h2><p>​      <a href="https://wiirong.github.io/" target="_blank" rel="noopener">https://wiirong.github.io/</a></p>
-<h2 id="12、发表文章："><a href="#12、发表文章：" class="headerlink" title="12、发表文章："></a>12、发表文章：</h2><p> （1） 在blog文件夹中的 source / _posts 里面创建“.md”文件（可以直接在blog文件夹中右键启动git Bash并输入 hexo new “文章名”   来完成这一步骤。）</p>
-<p> （2）利用CMD 且在d盘的blog目录下，输入老三样（后两行的第二个单词可以简写成一个字母g、d。另：clean不能缩写，但如非原地更新，则无需clean。）：</p>
-<p>​     hexo clean</p>
-<p>​     hexo generate</p>
-<p>​     hexo deploy</p>
-<p>   clean清除缓存这一步如非必须则可以省略不写。</p>
-<p>（3）用批处理.bat简化发表步骤（弄不成，懒得再试了）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line"></span><br><span class="line">start cmd &#x2F;k &quot;D: cd blog &amp;&amp; hexo clean -g -d&quot;</span><br><span class="line"></span><br><span class="line"> pause</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/16/HelloBlog/" data-id="ckcopqydk0000nctrdsij4ap8" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo%E5%8D%9A%E5%AE%A2/" rel="tag">Hexo博客</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-R与数据分析" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/07/16/R%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" class="article-date">
-  <time datetime="2020-07-15T17:04:28.700Z" itemprop="datePublished">2020-07-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/16/R%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">R与数据分析</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="第一章-Data-visualisation"><a href="#第一章-Data-visualisation" class="headerlink" title="第一章   Data visualisation"></a>第一章   Data visualisation</h1><h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>In <a href="https://r4ds.had.co.nz/data-visualisation.html#data-visualisation" target="_blank" rel="noopener">data visualisation</a> you’ll dive into visualisation, learning the basic structure of a <strong>ggplot2</strong> plot, and powerful techniques for <u>turning data into plots</u>.You get to make elegant and informative plots that help you understand data.</p>
-<p>This chapter focusses on <strong>ggplot2</strong>, one of the core members of the <strong>==tidyverse==</strong>. To access the <u>datasets</u>, <u>help pages</u>, and <u>functions</u> that we will use in this chapter, <strong>load the tidyverse</strong> by running this code:</p>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(tidyverse)</span><br></pre></td></tr></table></figure>
-
-<p>tidyverse包含了数据分析最常用的包，调用后得到的結果如下：</p>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(tidyverse)</span><br><span class="line"><span class="comment">#&gt; ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──</span></span><br><span class="line"><span class="comment">#&gt; ✔ ggplot2 3.3.0     ✔ purrr   0.3.4</span></span><br><span class="line"><span class="comment">#&gt; ✔ tibble  3.0.1     ✔ dplyr   0.8.5</span></span><br><span class="line"><span class="comment">#&gt; ✔ tidyr   1.0.3     ✔ stringr 1.4.0</span></span><br><span class="line"><span class="comment">#&gt; ✔ readr   1.3.1     ✔ forcats 0.5.0</span></span><br><span class="line"><span class="comment">#&gt; ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──</span></span><br><span class="line"><span class="comment">#&gt; ✖ dplyr::filter() masks stats::filter()</span></span><br><span class="line"><span class="comment">#&gt; ✖ dplyr::lag()    masks stats::lag()</span></span><br></pre></td></tr></table></figure>
-
-<p>其中，对勾项意为启用了这些<em>R包</em>，而冲突项（X）意为<strong>tidyverse</strong>与R的几个基础函数冲突。dplyr::filter()里的双冒号左边代表R包名，右边代表具体函数。</p>
-<blockquote>
-<p>You only need to install a package once, but you need to <strong>reload</strong> it every time you start a new session.      ——每个任务都要重新调用所需R包</p>
-</blockquote>
-<h2 id="一、初会散点图"><a href="#一、初会散点图" class="headerlink" title="一、初会散点图"></a>一、初会散点图</h2><h3 id="1、使用mpg这一data-frame"><a href="#1、使用mpg这一data-frame" class="headerlink" title="1、使用mpg这一data frame"></a>1、使用mpg这一data frame</h3><p>使用ggplot2自带的数据： <code>mpg</code> <strong>data frame</strong> found in ggplot2 (aka <code>ggplot2::mpg</code>). </p>
-<blockquote>
-<p>A ==<strong>data frame</strong>== is a rectangular collection of variables (in the columns) and observations (in the rows).<br>（<code>mpg</code> contains observations collected by the US Environmental Protection Agency on 38 models of car.）</p>
-</blockquote>
-<p>通过 <em>mpg</em> 查看此数据框的详情，通过  <em>?mpg</em>  查看其帮助文档。</p>
-<h3 id="2、创建一个ggplot"><a href="#2、创建一个ggplot" class="headerlink" title="2、创建一个ggplot"></a>2、创建一个ggplot</h3><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ggplot(data = mpg) +</span><br><span class="line">  geom_point(mapping = aes(x = displ, y = hwy))</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>函数/参数</th>
-<th>意义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>ggplot</strong>（）</td>
-<td>创建一个空坐标系（通过下句函数添加图层）</td>
-</tr>
-<tr>
-<td><strong>data=</strong> mpg</td>
-<td>ggplot的第一个参数，确定图中使用的数据（dataset）</td>
-</tr>
-<tr>
-<td>geom_point（）</td>
-<td>向plot添加一个<strong>散点图</strong>图层</td>
-</tr>
-<tr>
-<td>mapping</td>
-<td>geom函数必备参数，决定了dataset中的数据如何<u>映射（map）</u>成为视觉表现</td>
-</tr>
-<tr>
-<td>mapping=aes()</td>
-<td>aesthetic（审美）参数，内含有横纵坐标x、y</td>
-</tr>
-</tbody></table>
-<p>函数中的重点如下：<br>ggplot(==data === mpg) ==+==<br>  geom_point(==mapping = aes==(x = displ, y = hwy))</p>
-<p>{注}ggplot（）函数和geom_point（）函数之间用 <strong>+</strong> 连接，可以不换行直接运行，若换行（缩进格式谋求规范书写）的话，加号必须在上句的最后（若在下句的开始则会出错）。</p>
-<h3 id="3、制图代码模板A-graphing-template"><a href="#3、制图代码模板A-graphing-template" class="headerlink" title="3、制图代码模板A graphing template"></a>3、制图代码模板A graphing template</h3><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ggplot(data = &lt;DATA&gt;) + </span><br><span class="line">  &lt;GEOM_FUNCTION&gt;(mapping = aes(&lt;MAPPINGS&gt;))</span><br></pre></td></tr></table></figure>
-
-<p>用数据、geom函数、映射参数替换上述中含有&lt;&gt;的部分。本章接下来部分 will show you how to complete and extend this <strong>template</strong> to make different types of graphs. We will begin with the <code>&lt;MAPPINGS&gt;</code> component.</p>
-<blockquote>
-<p>注：参数的英文是argument</p>
-<p>map有映射的含义，mapping在此意为映射参数</p>
-</blockquote>
-<h2 id="二、审美映射参数（Aesthetic-mappings）"><a href="#二、审美映射参数（Aesthetic-mappings）" class="headerlink" title="二、审美映射参数（Aesthetic mappings）"></a>二、审美映射参数（Aesthetic mappings）</h2><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 按照样本的class变量进行区分，绘制成不同透明度的点</span></span><br><span class="line">ggplot(data = mpg) + </span><br><span class="line">  geom_point(mapping = aes(x = displ, y = hwy, alpha = class))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 按照样本的class变量进行区分，绘制成不同的形状的点</span></span><br><span class="line">ggplot(data = mpg) + </span><br><span class="line">  geom_point(mapping = aes(x = displ, y = hwy, shape = class))</span><br></pre></td></tr></table></figure>
-
-<p>ggplot2将会<strong>自动添加图例（legend）</strong>在plot旁边。还可以自动为所选变量class的每个惟一值分配惟一的审美级别（这一过程叫做<strong>scaling</strong>）。</p>
-<table>
-<thead>
-<tr>
-<th>aes（）内的审美参数</th>
-<th>用法：aes（x= ，Y= ，color= 某类型变量）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>color</td>
-<td>自动上色</td>
-</tr>
-<tr>
-<td>size</td>
-<td>赋予数据点不同的直径</td>
-</tr>
-<tr>
-<td>alpha</td>
-<td>透明度</td>
-</tr>
-<tr>
-<td>shape</td>
-<td>赋予最多 6 种不同的形状（超出部分不予绘制）</td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>调用  ?geo_point  帮助文档可以找到这些审美参数（其中的Aesthetics部分）。可以看到全部aesthetics映射参数的预览效果和使用方法。</p>
-</blockquote>
-<p>如果将上述审美参数写在  mapping=aes（）之外，而在geo_point（）函数之内，则图中全部点全部设置为同一种 颜色，此时color后面不跟variable名而是加引号的颜色的名字：</p>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ggplot(data = mpg) + </span><br><span class="line">  geom_point(mapping = aes(x = displ, y = hwy), color = <span class="string">"blue"</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="三、分面作图（Facets）"><a href="#三、分面作图（Facets）" class="headerlink" title="三、分面作图（Facets）"></a>三、分面作图（Facets）</h2><p>上面讲的审美参数能够引入第三个（甚至更多）变量进入plot中，而现在所讲的分面作图（Facets）也可以起到这一效果。</p>
-<h3 id="（1）用单个变量进行分面（facet）"><a href="#（1）用单个变量进行分面（facet）" class="headerlink" title="（1）用单个变量进行分面（facet）"></a>（1）用单个变量进行分面（facet）</h3><p>在绘制完ggplot和geom散点图之后，运用函数 facet_wrap（）可以进行单变量分隔面作图：</p>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ggplot(data = mpg) + </span><br><span class="line">  geom_point(mapping = aes(x = displ, y = hwy)) + </span><br><span class="line">  facet_wrap(~ class, nrow = <span class="number">2</span>)</span><br><span class="line"><span class="comment">#下图共有三个变量参与制图</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://d33wubrfki0l68.cloudfront.net/7b70e5c694d661644e49bcaa2fa8d923007cf718/b117d/visualize_files/figure-html/unnamed-chunk-12-1.png" alt="img"></p>
-<p>图中每个小面都将其对应的变量名写在小面图的上方。</p>
-<p>facet_wrap（）函数中有两个参数：第一个参数是 <strong>formula</strong>（表达式——R语言中的一种数据结构），用波浪符号  ~  隔开两个参数，在wrap（）中无响应变量所以左边空置。</p>
-<p>第二个参数是对分面小图的展示行数进行设置，用  nrow=   进行设置，竟在facet_wrap（）中使用。（下一节的facet_grid（）无此参数）</p>
-<blockquote>
-<p>facet_wrap(~class, scales = “free”)         ##分面可以用不同的坐标系，默认为scales=”fixed”.<br> facet_wrap(c(“cyl”, “drv”), labeller = “label_both”)         ## 同过c()函数，facet_wrap()也可实现两个变量的分面，通过labeller参数控制 标签显示更加完全。</p>
-</blockquote>
-<h3 id="（2）利用两个变量进行分面"><a href="#（2）利用两个变量进行分面" class="headerlink" title="（2）利用两个变量进行分面"></a>（2）利用两个变量进行分面</h3><p>用函数  facet_grid（）进行，其中的formula参数用 ~连接两个变量variables。</p>
-<p>但是可以用符号  .   来代替其中一个变量，使得结果不在该变量所对应的行（列）上进行分割面。</p>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ggplot(data = mpg) + </span><br><span class="line">  geom_point(mapping = aes(x = displ, y = hwy)) + </span><br><span class="line">  facet_grid(drv ~ cyl)</span><br><span class="line"><span class="comment">#结果图中的三行代表三种drv类型，而四列代表cyl的四个类型值。</span></span><br><span class="line"><span class="comment">#下图共有 4 个变量参与制图</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://d33wubrfki0l68.cloudfront.net/94b029204c691b958eb0c60c6915a19ee4d319bf/ceeb1/visualize_files/figure-html/unnamed-chunk-13-1.png" alt="img"></p>
-<h2 id="四、几何对象（Geometric-objects）"><a href="#四、几何对象（Geometric-objects）" class="headerlink" title="四、几何对象（Geometric objects）"></a>四、几何对象（Geometric objects）</h2><p>​    本节讲述不同的  geom   函数。</p>
-<table>
-<thead>
-<tr>
-<th>图形</th>
-<th>geom函数</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>bar charts（条形图）</td>
-<td>bar geoms</td>
-</tr>
-<tr>
-<td>line charts（折线图）</td>
-<td>line geoms</td>
-</tr>
-<tr>
-<td>boxplots（箱线图）</td>
-<td>boxplot geoms</td>
-</tr>
-<tr>
-<td>scatterplots（散点图）</td>
-<td>point geom</td>
-</tr>
-</tbody></table>
-<p>使用  ==<strong>geom_smooth（）</strong>==函数如下，输出图片如下：</p>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ggplot(data = mpg) +    </span><br><span class="line">  geom_smooth(mapping = aes(x = displ, y = hwy))</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://d33wubrfki0l68.cloudfront.net/3e4d5a44b35d0de122c81319995d5dcf484e6d71/7fb04/visualize_files/figure-html/unnamed-chunk-17-2.png" alt="img"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/16/R%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" data-id="ckcopqygu0003nctr5zdj6sxp" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/R%E8%AF%AD%E8%A8%80/" rel="tag">R语言</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/" rel="tag">数据处理</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
         
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 WiiRong<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2020/07/16/HelloBlog/">配置个人博客过程实录</a></p>
     </div>
-  </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2020/07/16/HelloBlog/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="WiiRong's avatar">
+            </div>
+            <div>
+                <strong>WiiRong</strong>
+                <span>7月 16, 2020</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2020/07/16/R%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">R与数据分析</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2020/07/16/R%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="WiiRong's avatar">
+            </div>
+            <div>
+                <strong>WiiRong</strong>
+                <span>7月 16, 2020</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+
+    
+
+    
+        <script type="text/ls-javascript" id="thumbnail-script">
+    var randomNum;
+
+    var locatePost = $('.locate-thumbnail-symbol').next();
+    for(var i = 0; i < 10; i++) {
+        randomNum = Math.floor(Math.random() * 19 + 1);
+
+        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
+        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+
+        locatePost = locatePost.next();
+    }
+</script>
+
+    
+</div>
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="WiiRong's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        903590780@qq.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto: 903590780@qq.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#" target="_blank" title="Linkedin">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">Linkedin</i>
+                        
+                        Linkedin
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2020/07/">七月 2020<span class="sidebar_archives-count">2</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/tags" title="标签云">
+                
+                    <i class="material-icons sidebar-material-icons">cloud</i>
+                
+                标签云
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">2</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;WiiRong's Blog
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-</nav>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Swiftye -->
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- Local Search-->
+    
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
 
 
 
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
 
-<script src="/js/script.js"></script>
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+<script type="text/ls-javascript" id="Bing-Background-script">
+    queue.offer(function(){
+        $('body').attr('data-original', 'https://api.i-meto.com/bing?');
+    });
+</script>
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
 
 
 
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
 
-  </div>
-</body>
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
 </html>
