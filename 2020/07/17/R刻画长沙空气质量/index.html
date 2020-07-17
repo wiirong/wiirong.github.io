@@ -46,7 +46,7 @@
     
     <title>
         
-            归档: 2020 | 
+            R刻画长沙空气质量 | 
         
         WiiRong&#39;s Blog
     </title>
@@ -213,7 +213,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="WiiRong&#39;s Blog">
-    <meta name="msapplication-starturl" content="http://yoursite.com/archives/2020/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2020/07/17/R%E5%88%BB%E7%94%BB%E9%95%BF%E6%B2%99%E7%A9%BA%E6%B0%94%E8%B4%A8%E9%87%8F/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="WiiRong&#39;s Blog">
@@ -228,13 +228,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/archives/2020/">
+    <meta property="og:url" content="http://yoursite.com/2020/07/17/R%E5%88%BB%E7%94%BB%E9%95%BF%E6%B2%99%E7%A9%BA%E6%B0%94%E8%B4%A8%E9%87%8F/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档: 2020 | WiiRong&#39;s Blog">
+    <meta property="og:title" content="R刻画长沙空气质量 | WiiRong&#39;s Blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
     
 
+    
+        <meta property="article:published_time" content="Fri Jul 17 2020 17:34:42 GMT+0800">
+        <meta property="article:modified_time" content="Fri Jul 17 2020 18:24:23 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -242,13 +245,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/archives/2020/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2020/07/17/R%E5%88%BB%E7%94%BB%E9%95%BF%E6%B2%99%E7%A9%BA%E6%B0%94%E8%B4%A8%E9%87%8F/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2020/07/17/R%E5%88%BB%E7%94%BB%E9%95%BF%E6%B2%99%E7%A9%BA%E6%B0%94%E8%B4%A8%E9%87%8F/index.html",
+    "headline": "R刻画长沙空气质量",
+    "datePublished": "Fri Jul 17 2020 17:34:42 GMT+0800",
+    "dateModified": "Fri Jul 17 2020 18:24:23 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "WiiRong",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "苟日新，日日新，又日新"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "WiiRong&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
 
 
     
@@ -282,205 +315,213 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#简述"><span class="post-toc-number">1.</span> <span class="post-toc-text">简述</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码"><span class="post-toc-number">2.</span> <span class="post-toc-text">代码</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#结果"><span class="post-toc-number">3.</span> <span class="post-toc-text">结果</span></a></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/07/17/R%E5%88%BB%E7%94%BB%E9%95%BF%E6%B2%99%E7%A9%BA%E6%B0%94%E8%B4%A8%E9%87%8F/">R刻画长沙空气质量</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            简述Openair...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/07/17/R%E5%88%BB%E7%94%BB%E9%95%BF%E6%B2%99%E7%A9%BA%E6%B0%94%E8%B4%A8%E9%87%8F/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="WiiRong's avatar">
-            </div>
-            <div>
-                <strong>WiiRong</strong>
-                <span>7月 17, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/07/16/HelloBlog/">配置个人博客过程实录</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/07/16/HelloBlog/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="WiiRong's avatar">
-            </div>
-            <div>
-                <strong>WiiRong</strong>
-                <span>7月 16, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/07/16/R%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">R与数据分析</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/07/16/R%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="WiiRong's avatar">
-            </div>
-            <div>
-                <strong>WiiRong</strong>
-                <span>7月 16, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                R刻画长沙空气质量
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>WiiRong</strong>
+        <span>7月 17, 2020</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=R刻画长沙空气质量&url=http://yoursite.com/2020/07/17/R%E5%88%BB%E7%94%BB%E9%95%BF%E6%B2%99%E7%A9%BA%E6%B0%94%E8%B4%A8%E9%87%8F/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=R刻画长沙空气质量&url=http://yoursite.com/2020/07/17/R%E5%88%BB%E7%94%BB%E9%95%BF%E6%B2%99%E7%A9%BA%E6%B0%94%E8%B4%A8%E9%87%8F/index.html&via=WiiRong" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2020/07/17/R%E5%88%BB%E7%94%BB%E9%95%BF%E6%B2%99%E7%A9%BA%E6%B0%94%E8%B4%A8%E9%87%8F/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>Openair包，用于分析空气污染数据的R包。可以将时间序列格式的污染数据刻画成日历热图。</p>
+<p>也可以单纯用ggplot2包配合lubridate的数据处理，来绘制日历图。</p>
+<p>如果要从晚上爬取数据的话则先用RCurl包和XML包配合进行抓包。我没爬成功，<a href="https://www.aqistudy.cn/historydata/网站的反审查让我看不懂html，汗。直接把月度数据复制到excel里ChangshaKongqiZhiliang.xlsx了。" target="_blank" rel="noopener">https://www.aqistudy.cn/historydata/网站的反审查让我看不懂html，汗。直接把月度数据复制到excel里ChangshaKongqiZhiliang.xlsx了。</a></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">####导入数据（爬虫失败，用excel导入的）####</span></span><br><span class="line"><span class="keyword">library</span>(readxl)</span><br><span class="line">ChangshaKongqiZhiliang &lt;- read_excel(<span class="string">"D:/victoryr/ChangshaKongqiZhiliang.xlsx"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">####用openair包绘制空气日历热图####</span></span><br><span class="line"><span class="keyword">library</span>(DT)</span><br><span class="line"><span class="keyword">library</span>(tidyverse)</span><br><span class="line"><span class="keyword">library</span>(openair)</span><br><span class="line">mydata &lt;- ChangshaKongqiZhiliang    <span class="comment">#换个好写的名字</span></span><br><span class="line">mydata$data&lt;-as.Date(mydata$data);names(mydata)[<span class="number">1</span>]&lt;-<span class="string">"date"</span>    </span><br><span class="line"><span class="comment">#用“date”替换掉数据框mydata中的data这一有错字的列名（我之前打错字了）</span></span><br><span class="line">calendarPlot(mydata,pollutant=<span class="string">"AQI"</span>,year=<span class="number">2019</span>)</span><br><span class="line">calendarPlot(mydata,pollutant=<span class="string">"PM2.5"</span>,year=<span class="number">2019</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">####接下来改用ggplot2做空气日历图####</span></span><br><span class="line"><span class="keyword">library</span>(lubridate)</span><br><span class="line"><span class="keyword">library</span>(plyr) </span><br><span class="line"><span class="comment">##用lubridate包处理数据</span></span><br><span class="line">dat &lt;- mydata</span><br><span class="line">dat$month&lt;-as.numeric(as.POSIXlt(dat$date)$mon+<span class="number">1</span>)</span><br><span class="line">dat$monthf&lt;-factor(dat$month,levels=as.character(<span class="number">1</span>:<span class="number">12</span>),labels=c(<span class="string">"Jan"</span>,<span class="string">"Feb"</span>,<span class="string">"Mar"</span>,<span class="string">"Apr"</span>,<span class="string">"May"</span>,<span class="string">"Jun"</span>,<span class="string">"Jul"</span>,<span class="string">"Aug"</span>,<span class="string">"Sep"</span>,<span class="string">"Oct"</span>,<span class="string">"Nov"</span>,<span class="string">"Dec"</span>),ordered=<span class="literal">TRUE</span>)</span><br><span class="line"></span><br><span class="line">dat$weekday&lt;-as.POSIXlt(dat$date)$wday</span><br><span class="line">dat$weekdayf&lt;-factor(dat$weekday,levels=rev(<span class="number">0</span>:<span class="number">6</span>),labels=rev(c(<span class="string">"Sun"</span>,<span class="string">"Mon"</span>,<span class="string">"Tue"</span>,<span class="string">"Wed"</span>,<span class="string">"Thu"</span>,<span class="string">"Fri"</span>,<span class="string">"Sat"</span>)),ordered=<span class="literal">TRUE</span>)</span><br><span class="line"></span><br><span class="line">dat$week &lt;- as.numeric(format(dat$date,<span class="string">"%W"</span>))</span><br><span class="line">dat&lt;-ddply(dat,.(monthf),transform,monthweek=<span class="number">1</span>+week-min(week))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">##用ggplot2作图</span></span><br><span class="line">windowsFonts(myFont = windowsFont(<span class="string">"微软雅黑"</span>))</span><br><span class="line"></span><br><span class="line">ggplot(dat,aes(monthweek,weekdayf,fill=AQI))+</span><br><span class="line">  geom_tile(colour=<span class="string">'white'</span>) +</span><br><span class="line">  facet_wrap(~monthf ,nrow=<span class="number">3</span>) +</span><br><span class="line">  scale_fill_gradient(space=<span class="string">"Lab"</span>,limits=c(<span class="number">100</span>, max(dat$AQI)),low=<span class="string">"yellow"</span>, high=<span class="string">"red"</span>) +</span><br><span class="line">  labs(title=<span class="string">"长沙市2019年空气日历热图"</span>,subtitle=<span class="string">"AQI指数为污染级别以上的天数分布（AQI&gt;=100）"</span>,x=<span class="string">"Week of Month"</span>,y=<span class="string">""</span>)+</span><br><span class="line">  theme(title=element_text(family=<span class="string">"myFont"</span>))</span><br><span class="line"><span class="comment">#作图结束</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p><img src="D:%5CBlog%5Csource_posts%5CChangShaAQI2019.png" alt=""></p>
+<p>这是2019年的长沙AQI数据，下面是2020上半年的。</p>
+<p><img src="D:%5CBlog%5Csource_posts%5CChangShaAQI20.png" alt="计算机生成了可选文字: 一2020 222324 250028产《 一2020 13 22河@25“27 石月一 2020 25027 22 232425 些月一 2020 溪5@0酽0。 一2020 27282930 0000000"></p>
+<p>ggplot做出来的图不太直观：</p>
+<p><img src="D:%5CBlog%5Csource_posts%5CggplotChangShaAQI" alt="image-20200717182338658"></p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2020/07/16/HelloBlog/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
